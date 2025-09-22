@@ -1,69 +1,62 @@
+/* ==============================
+   Estilos personalizados
+   ============================== */
+
+/* Fuente base */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f2f2f2;
-  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
-  background: #004aad;
-  color: white;
-  text-align: center;
-  padding: 20px;
+/* Navbar fijo */
+nav {
+  backdrop-filter: blur(6px);
 }
 
-.logo {
-  width: 80px;
-  margin-bottom: 10px;
+/* Hero */
+#hero h2 {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+#hero p {
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
 }
 
-.planes {
-  padding: 20px;
-  text-align: center;
+/* Botones */
+button, a {
+  transition: transform 0.2s ease-in-out;
+}
+button:hover, a:hover {
+  transform: scale(1.05);
 }
 
-.planes h2 {
-  margin-bottom: 20px;
+/* FAQ */
+#faq h4 {
+  color: #1e3a8a; /* azul oscuro */
+  margin-bottom: 0.5rem;
+}
+#faq p {
+  color: #374151; /* gris neutro */
 }
 
-.card {
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 400px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* Formulario simulador */
+#loanForm input, 
+#loanForm select {
+  outline: none;
+  border: 2px solid #d1d5db; /* gris claro */
+}
+#loanForm input:focus, 
+#loanForm select:focus {
+  border-color: #1e3a8a;
+  box-shadow: 0 0 5px rgba(30, 58, 138, 0.5);
 }
 
-.destacado {
-  border: 2px solid #004aad;
+/* Botón WhatsApp flotante */
+.fixed a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.precio {
-  font-size: 1.3em;
-  font-weight: bold;
-  color: #004aad;
-  margin: 15px 0;
-}
-
-.whatsapp-btn {
-  display: inline-block;
-  background: #25d366;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.whatsapp-btn:hover {
-  background: #1ebd5d;
-}
-
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 10px;
+/* Animaciones */
+[data-aos] {
+  transition-property: transform, opacity;
 }
